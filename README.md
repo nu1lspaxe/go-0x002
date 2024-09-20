@@ -26,22 +26,23 @@
    rpc BidiHello(stream HelloRequest) returns (stream HelloResponse);
    ```
 
-## Unary
-
-1. Generate proto file under `go-0x002/unary/proto`
-
+### Scripts
 ```bash
 protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative schema.proto
 ```
+
+## Unary
+
+Generate proto file under `go-0x002/unary/proto`, run the [script](#scripts).
 
 ## Streaming Server
 
-1. Generate proto file under `go-0x002/streaming-server/proto`
-
-```bash
-protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative schema.proto
-```
+Generate proto file under `go-0x002/streaming-server/proto`, run the [script](#scripts).
 
 ## Streaming Client
 
+Generate proto file under `go-0x002/streaming-client/proto`, run the [script](#scripts).
+
 ## Streaming Bidirectional
+
+Generate proto file under `go-0x002/streaming-bidirectional/proto`, run the [script](#scripts).
