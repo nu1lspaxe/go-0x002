@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/nu1lspaxe/go-0x002/streaming-client/proto";
+option go_package = "github.com/nu1lspaxe/go-0x002/streaming-client/proto;proto";
 
 service Greeter {
     rpc SayHello (stream HelloRequest) returns (HelloReply) {}

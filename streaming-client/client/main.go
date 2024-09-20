@@ -20,7 +20,7 @@ const (
 func main() {
 	conn, err := grpc.NewClient(address, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
-		log.Fatalf("did not connect: %v", err)
+		log.Fatalf("connect failed: %v", err)
 	}
 	defer conn.Close()
 	c := pb.NewGreeterClient(conn)
